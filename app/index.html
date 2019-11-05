@@ -1,0 +1,2212 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>JS LEARN | Book</title>
+  </head>
+  <body>
+    <div id="appLoader" class="app-loader">
+      <div class="preloader">
+        <svg version="1.1" class="signature" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="-5 -5 397.1 153.1" style="enable-background:new -5 -5 397.1 153.1;" xml:space="preserve">
+          <path class="stroke-I" d="M130.3,18.1c0,0-4.7,13.3,9.3,11s35.7-14.7,35.7-14.7S186.6,0.8,166,0.1s-59.7,2-79.3,11s-38.7,16-46,24.3
+                        s-21,20.3,0,22.3s58.7-1.3,83.7,4.3s31,7.3,34.3,10.6c3.3,3.4,21.3,12.4-0.7,20.4s-50.7,15.7-80.7,16.3s-60.3,0-61,0
+                        c-0.7,0-36.3,0.3,0-6.7s64.3-17.3,119.3-20.7c55-3.3,66.7-2.7,66.7-2.7s8.7-1.7,2.7,4.3s27,0,27,0s4-2,4.3,0.3
+                        c0.3,2.3-4.3,4.3,6,4.7c10.3,0.3,25,1.7,30.3-3.3c5.3-5,13-15,2.3-24.7s-29.3-24-35-28.3c-5.7-4.3-16.7-17-1.3-20s27.7-8,74-7.3
+                        s52.7,1.3,61.3,2.3s22.7,3.3,3.7,9.3S338,33.8,336,35.4s-3.7,3-3.7,3"></path>
+          <path class="stroke-an" d="M25,127.4c0,0,8-4.3,129.3-9s159-5.7,159-5.7"></path>
+          <path class="stroke-flourish" d="M284.3,144.8c0,0-4.3,0.3-5.7,2.3c-1.3,2-3.7,6-3.7,6"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="app">
+      <header class="header">
+        <div class="header-wrap">
+          <div class="header-row">
+            <a href="#" class="logo" alt="logo">
+              JavaScript
+            </a>
+            <div class="page-category-box">
+              <div class="page-category">Category</div>
+
+              <button id="burgerMenu" class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="mainContent">
+        <div class="content-holder">
+          <section>
+            <div class="container-fluid">
+              <h1>Hello World!</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                assumenda dicta dolores eaque esse ex fugit nesciunt officia
+                quam quasi, recusandae sit vitae! Excepturi incidunt iste
+                molestias nostrum, numquam saepe. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. A assumenda dicta dolores eaque
+                esse ex fugit nesciunt officia quam quasi, recusandae sit vitae!
+                Excepturi incidunt iste molestias nostrum, numquam saepe. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. A assumenda
+                dicta dolores eaque esse ex fugit nesciunt officia quam quasi,
+                recusandae sit vitae! Excepturi incidunt iste molestias nostrum,
+                numquam saepe. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. A assumenda dicta dolores eaque esse ex fugit
+                nesciunt officia quam quasi, recusandae sit vitae! Excepturi
+                incidunt iste molestias nostrum, numquam saepe. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit. A assumenda dicta
+                dolores eaque esse ex fugit nesciunt officia quam quasi,
+                recusandae sit vitae! Excepturi incidunt iste molestias nostrum,
+                numquam saepe.
+              </p>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="footer-content">
+                <small>© Stefan Lagunovsky 2019</small>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </main>
+      <aside>
+        <div class="aside-menu">
+          <nav id="sideNavAccordion">
+            <ol>
+              <li><a class="nav-title" href="#/JavaScript/Tutorials"><strong>Tutorials:</strong></a></li>
+              <li class="toggle active">
+                <div class="details">
+                  <div class="details-subtitle">Complete beginners</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+                        >JavaScript basics</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Learn/JavaScript/First_steps"
+                        >JavaScript first steps</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Learn/JavaScript/Building_blocks"
+                        >JavaScript building blocks</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Learn/JavaScript/Objects"
+                        >Introducing JavaScript objects</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">JavaScript Guide</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a href="#JavaScript/Guide/Introduction"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Grammar_and_Types"
+                        >Grammar and types</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Control_flow_and_error_handling"
+                        >Control flow and error handling</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Loops_and_iteration"
+                        >Loops and iteration</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#JavaScript/Guide/Functions"
+                        >Functions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Expressions_and_Operators"
+                        >Expressions and operators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Numbers_and_dates"
+                        >Numbers and dates</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Text_formatting"
+                        >Text formatting</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Regular_Expressions"
+                        >Regular expressions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Indexed_collections"
+                        >Indexed collections</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Keyed_collections"
+                        >Keyed collections</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Working_with_Objects"
+                        >Working with objects</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/div class="details"_of_the_Object_Model"
+                        >div class="details" of the object model</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#JavaScript/Guide/Using_promises"
+                        >Using promises</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Iterators_and_generators"
+                        >Iterators and generators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#JavaScript/Guide/Meta_programming"
+                        >Meta programming</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#JavaScript/Guide/Modules"
+                        >JavaScript modules</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Intermediate</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a href="#/en-US/docs/Learn/JavaScript/Objects"
+                        >Introducing JavaScript objects</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#/en-US/docs/Learn/JavaScript/Client-side_web_APIs"
+                        >Client-side web APIs</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#A_re-introduction_to_JavaScript"
+                        >A re-introduction to JavaScript</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Data_structures"
+                        >JavaScript data structures</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Equality_comparisons_and_sameness"
+                        >Equality comparisons and sameness</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Closures"
+                        >Closures</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Advanced</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Inheritance_and_the_prototype_chain"
+                        >Inheritance and the prototype chain</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Strict_mode"
+                        >Strict mode</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Typed_arrays"
+                        >JavaScript typed arrays</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Memory_Management"
+                        >Memory Management</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#EventLoop"
+                        >Concurrency model and Event Loop</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li>
+                <strong
+                  ><a class="nav-title" href="#Reference"
+                    >References:</a
+                  ></strong
+                >
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Built-in objects</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Array"
+                        title="The JavaScript Array&nbsp;object is a global object that&nbsp;is used in the&nbsp;construction&nbsp;of&nbsp;arrays; which are high-level, list-like objects."
+                        >Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/ArrayBuffer"
+                        title="The ArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer."
+                        >ArrayBuffer</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an experimental API that should not be used in production code."
+                          ><i class="icon-beaker"> </i></span></span
+                      ><a
+                        href="#Reference/Global_Objects/AsyncFunction"
+                        title="The AsyncFunction constructor creates a new async function object. In JavaScript every asynchronous function is actually an AsyncFunction object."
+                        >AsyncFunction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Atomics"
+                        title="The Atomics object provides atomic operations as static methods. They are used with SharedArrayBuffer objects."
+                        >Atomics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/BigInt"
+                        title="BigInt is a built-in object that provides a way to represent whole numbers larger than 253 - 1, which is the largest number JavaScript can reliably represent with the Number primitive. BigInt can be used for arbitrarily large integers."
+                        >BigInt</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/BigInt64Array"
+                        title="The BigInt64Array typed array represents an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation)."
+                        >BigInt64Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/BigUint64Array"
+                        title="The BigUint64Array typed array represents an array of 64-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0n. Once established, you can reference elements in the array using the object's methods, or by using standard array index syntax (that is, using bracket notation)."
+                        >BigUint64Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Boolean"
+                        title="The Boolean object is an object wrapper for a boolean value."
+                        >Boolean</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/DataView"
+                        title="The DataView view provides a low-level interface for reading and writing multiple number types in a binary ArrayBuffer, without having to care about the platform's endianness."
+                        >DataView</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Date"
+                        title="Creates a JavaScript Date instance that represents a single moment in time in a platform-independent format."
+                        >Date</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Error"
+                        title="The Error constructor creates an error object."
+                        >Error</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/EvalError"
+                        title="The EvalError object indicates an error regarding the global eval() function. This exception is not thrown by JavaScript anymore, however the EvalError object remains for compatibility."
+                        >EvalError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Float32Array"
+                        title="The Float32Array typed array represents an array of 32-bit floating point numbers (corresponding to the C float data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Float32Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Float64Array"
+                        title="The Float64Array typed array represents an array of 64-bit floating point numbers (corresponding to the C double data type) in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Float64Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Function"
+                        title="The Function constructor creates a new Function object. Calling the constructor directly can create functions dynamically, but suffers from&nbsp;security and similar (but far less significant) performance issues to eval. However, unlike eval, the Function constructor creates functions which execute in the global scope only."
+                        >Function</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Generator"
+                        title="The Generator object is returned by a generator function and it conforms to both the iterable protocol and the iterator protocol."
+                        >Generator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/GeneratorFunction"
+                        title="The GeneratorFunction constructor creates a new generator function object. In JavaScript every generator function is actually a GeneratorFunction object."
+                        >GeneratorFunction</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Infinity"
+                        title="The global Infinity property is a numeric value representing infinity."
+                        >Infinity</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Int16Array"
+                        title="The Int16Array typed array represents an array of twos-complement 16-bit signed integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Int16Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Int32Array"
+                        title="The Int32Array typed array represents an array of twos-complement 32-bit signed integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Int32Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Int8Array"
+                        title="The Int8Array typed array represents an array of twos-complement 8-bit signed integers. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Int8Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/InternalError"
+                        title='The InternalError object indicates an error that occurred internally in the JavaScript engine. For example: "InternalError: too much recursion".'
+                        >InternalError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Intl"
+                        title="The Intl object is the namespace for the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, and date and time formatting. The INTL object provides access to several constructors as well as functionality common to the internationalization constructors and other language sensitive functions."
+                        >Intl</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Collator"
+                        title="The Intl.Collator object is a constructor for collators, objects that enable language sensitive string comparison."
+                        >Intl.Collator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/DateTimeFormat"
+                        title="The Intl.DateTimeFormat object is a constructor for objects that enable language-sensitive date and time formatting."
+                        >Intl.DateTimeFormat</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an experimental API that should not be used in production code."
+                          ><i class="icon-beaker"> </i></span></span
+                      ><a
+                        href="#Reference/Global_Objects/ListFormat"
+                        title="The Intl.ListFormat object is a constructor for objects that enable language-sensitive list formatting."
+                        >Intl.ListFormat</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Locale"
+                        title="The Intl.Locale constructor is a standard built-in property of the Intl object that represents a Unicode locale identifier."
+                        >Intl.Locale</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/NumberFormat"
+                        title="The Intl.NumberFormat object is a constructor for objects that enable language sensitive number formatting."
+                        >Intl.NumberFormat</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/PluralRules"
+                        title="The Intl.PluralRules object is a constructor for objects that enable plural sensitive formatting and plural&nbsp;language rules."
+                        >Intl.PluralRules</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/RelativeTimeFormat"
+                        title="The Intl.RelativeTimeFormat object is a constructor for objects that enable language-sensitive relative time formatting."
+                        >Intl.RelativeTimeFormat</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/JSON"
+                        title="The JSON object contains methods for parsing JavaScript Object Notation (JSON) and converting values to JSON. It can't be called or constructed, and aside from its two method properties, it has no interesting functionality of its own."
+                        >JSON</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Map"
+                        title="The Map object holds key-value pairs and remembers the original insertion order of the keys."
+                        >Map</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Math"
+                        title="Math is a built-in object that has properties and methods for mathematical constants and functions. Not a function object."
+                        >Math</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/NaN"
+                        title="The global NaN property is a value representing Not-A-Number."
+                        >NaN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Number"
+                        title="The Number JavaScript object is a wrapper object allowing you to work with numerical values. A Number object is created using the Number() constructor. A&nbsp;primitive type object number is&nbsp;created using the Number() function."
+                        >Number</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Object"
+                        title="The Object constructor creates an object wrapper."
+                        >Object</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Promise"
+                        title="The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value."
+                        >Promise</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Proxy"
+                        title="The Proxy object is used to define custom behavior for fundamental operations (e.g. property lookup, assignment, enumeration, function invocation, etc)."
+                        >Proxy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/RangeError"
+                        title="The RangeError object indicates an error when a value is not in the set or range of allowed values."
+                        >RangeError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/ReferenceError"
+                        title="The ReferenceError object represents an error when a non-existent variable is referenced."
+                        >ReferenceError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Reflect"
+                        title="Reflect is a built-in object that provides methods for interceptable JavaScript operations. The methods are the same as those of proxy handlers. Reflect is not a function object, so it's not constructible."
+                        >Reflect</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/RegExp"
+                        title="The RegExp constructor creates a regular expression object for matching text with a pattern."
+                        >RegExp</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Set"
+                        title="The Set object lets you store unique values of any type, whether primitive values or object references."
+                        >Set</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/SharedArrayBuffer"
+                        title="The SharedArrayBuffer object is used to represent a generic, fixed-length raw binary data buffer, similar to the ArrayBuffer object, but in a way that they can be used to create views on shared memory. Unlike an ArrayBuffer, a SharedArrayBuffer cannot become detached."
+                        >SharedArrayBuffer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/String"
+                        title="The String global object is a constructor for strings or a sequence of characters."
+                        >String</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Symbol"
+                        title='The data type&nbsp;symbol is a primitive data type. The Symbol() function returns a value of type symbol, has static properties that expose several members of built-in objects, has static methods that expose the global symbol registry, and resembles a built-in object class&nbsp;but is incomplete as a constructor because it does not support the syntax "new Symbol()".'
+                        >Symbol</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/SyntaxError"
+                        title="The SyntaxError object represents an error when trying to interpret syntactically invalid code."
+                        >SyntaxError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/TypeError"
+                        title="The TypeError object represents an error when a value is not of the expected type."
+                        >TypeError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/TypedArray"
+                        title="A TypedArray object describes an array-like view of an underlying binary data buffer. There is no global property named TypedArray, nor is there a directly visible TypedArray constructor.&nbsp; Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type."
+                        >TypedArray</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/URIError"
+                        title="The URIError object represents an error when a global URI handling function was used in a wrong way."
+                        >URIError</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Uint16Array"
+                        title="The Uint16Array typed array represents an array of 16-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Uint16Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Uint32Array"
+                        title="The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use DataView instead. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Uint32Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Uint8Array"
+                        title="The Uint8Array typed array represents an array of 8-bit unsigned integers. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Uint8Array</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/Uint8ClampedArray"
+                        title="The Uint8ClampedArray typed array represents an array of 8-bit unsigned integers clamped to 0-255; if you specified a value that is out of the range of [0,255], 0 or 255 will be set instead; if you specify a non-integer, the nearest integer&nbsp;will be set. The contents are initialized to 0. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation)."
+                        >Uint8ClampedArray</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/WeakMap"
+                        title="The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. The keys must be objects and the values can be arbitrary values."
+                        >WeakMap</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/WeakSet"
+                        title="The WeakSet object lets you store weakly held objects in a collection."
+                        >WeakSet</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/WebAssembly"
+                        title="The WebAssembly JavaScript object acts as the namespace for all WebAssembly-related functionality."
+                        >WebAssembly</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/decodeURI"
+                        title="The decodeURI() function decodes a Uniform Resource Identifier (URI) previously created by encodeURI() or by a similar routine."
+                        >decodeURI()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/decodeURIComponent"
+                        title="The decodeURIComponent() function decodes a Uniform Resource Identifier (URI) component previously created by encodeURIComponent or by a similar routine."
+                        >decodeURIComponent()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/encodeURI"
+                        title='The encodeURI() function encodes a Uniform Resource Identifier (URI) by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character (will only be four escape sequences for characters composed of two "surrogate" characters).'
+                        >encodeURI()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/encodeURIComponent"
+                        title='The encodeURIComponent()&nbsp;function encodes a Uniform Resource Identifier (URI) component by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character (will only be four escape sequences for characters composed of two "surrogate" characters).'
+                        >encodeURIComponent()</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This deprecated API should no longer be used, but will probably still work."
+                          ><i class="icon-thumbs-down-alt"> </i></span></span
+                      ><a
+                        href="#Reference/Global_Objects/escape"
+                        title="The escape() function computes a new string in which certain characters have been replaced by a hexadecimal escape sequence."
+                        >escape()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/eval"
+                        title="The eval() function evaluates JavaScript code represented as a string."
+                        >eval()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/globalThis"
+                        title="The global globalThis property contains the global this value, which is akin to the global object."
+                        >globalThis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/isFinite"
+                        title="The global isFinite() function determines whether the passed value is a finite number. If &nbsp;needed, the parameter is first converted to a number."
+                        >isFinite()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/isNaN"
+                        title="The isNaN() function determines whether a value is NaN or not. Note,&nbsp;coercion inside the isNaN function has interesting rules; you may alternatively want to use Number.isNaN(), as defined in ECMAScript 2015."
+                        >isNaN()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/null"
+                        title="The value null&nbsp;represents the intentional absence of any object value. It is one of JavaScript's primitive values."
+                        >null</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/parseFloat"
+                        title="The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number."
+                        >parseFloat()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/parseInt"
+                        title="The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems)."
+                        >parseInt()</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Global_Objects/undefined"
+                        title="The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types."
+                        >undefined</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This deprecated API should no longer be used, but will probably still work."
+                          ><i class="icon-thumbs-down-alt"> </i></span></span
+                      ><a
+                        href="#Reference/Global_Objects/unescape"
+                        title="The&nbsp;unescape() function computes a new string in which hexadecimal escape sequences are replaced with the character that it represents. The escape sequences might be introduced by a function like escape. Usually, decodeURI or decodeURIComponent are preferred over unescape."
+                        >unescape()</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><a
+                        href="#Reference/Global_Objects/uneval"
+                        title="The uneval() function creates a&nbsp;string representation of the source code of an Object."
+                        >uneval()</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Expressions &amp; operators</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Arithmetic_Operators"
+                        title="Arithmetic operators take numerical values (either literals or variables) as their operands and return a single numerical value. The standard arithmetic operators are addition (+), subtraction (-), multiplication (*), and division (/)."
+                        >Arithmetic operators</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Array_comprehensions"
+                        title="The array comprehension syntax was a JavaScript expression which allowed you to quickly assemble a new array based on an existing one. However, it has been removed from the standard and the Firefox implementation. Do not use it!"
+                        >Array comprehensions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Assignment_Operators"
+                        title="An assignment operator assigns a value to its left operand based on the value of its right operand."
+                        >Assignment operators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Bitwise_Operators"
+                        title="Bitwise operators treat their operands as a sequence of 32 bits (zeroes and ones), rather than as decimal, hexadecimal, or octal numbers. For example, the decimal number nine has a binary representation of 1001. Bitwise operators perform their operations on such binary representations, but they return standard JavaScript numerical values."
+                        >Bitwise operators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Comma_Operator"
+                        title="The comma operator evaluates each of its operands (from left to right) and returns the value of the last operand."
+                        >Comma operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Comparison_Operators"
+                        title="JavaScript has both strict and type–converting comparisons. A strict comparison (e.g., ===) is only true if the operands are of the same type and the contents match. The more commonly-used abstract comparison (e.g. ==) converts the operands to the same type before making the comparison. For relational abstract comparisons (e.g., <=), the operands are first converted to primitives, then to the same type, before comparison."
+                        >Comparison operators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Conditional_Operator"
+                        title="The conditional (ternary) operator is the only JavaScript operator that takes three operands. This operator is frequently used as a shortcut for the if statement."
+                        >Conditional (ternary) operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Destructuring_assignment"
+                        title="The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables."
+                        >Destructuring assignment</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Expression_closures"
+                        title="Expression closures are a shorthand function syntax for writing simple functions."
+                        >Expression closures</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Generator_comprehensions"
+                        title="The generator comprehension syntax was a JavaScript expression which allowed you to quickly assemble a new generator function based on an existing iterable object. However, it has been removed from the standard and the Firefox implementation. Do not use it!"
+                        >Generator comprehensions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Grouping"
+                        title="The grouping operator ( ) controls the precedence of evaluation in expressions."
+                        >Grouping operator</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Legacy_generator_function"
+                        title="The function keyword can be used to define a legacy generator function inside an expression. To make the function a legacy generator, the function body should contain at least one yield expression."
+                        >Legacy generator function expression</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Logical_Operators"
+                        title="Logical operators are typically used with Boolean (logical) values. When they are, they return a Boolean value. However, the &amp;&amp; and || operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they will return a non-Boolean value."
+                        >Logical operators</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Object_initializer"
+                        title="Objects can be initialized using new Object(), Object.create(), or using the literal notation (initializer notation). An object initializer is a comma-delimited list of zero or more pairs of property names and associated values of an object, enclosed in curly braces ({})."
+                        >Object initializer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Operator_Precedence"
+                        title="Operator precedence determines the way in which operators are parsed with respect to each other. Operators with higher precedence become the operands of operators with lower precedence."
+                        >Operator precedence</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an experimental API that should not be used in production code."
+                          ><i class="icon-beaker"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Optional_chaining"
+                        title="The ?. operator functions similarly to the . chaining operator, except that instead of causing an error if a reference is null or undefined, the expression short-circuits with a return value of undefined."
+                        >Optional chaining</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an experimental API that should not be used in production code."
+                          ><i class="icon-beaker"> </i></span></span
+                      ><a
+                        href="#Reference/Operators/Pipeline_operator"
+                        title="The experimental pipeline operator |> (currently at stage 1) pipes the value of an expression into a function. This allows the&nbsp;creation of&nbsp;chained function calls in a readable manner. The result is&nbsp;syntactic sugar in which a function call with a single argument can be written like this:"
+                        >Pipeline operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Property_Accessors"
+                        title="Property accessors provide access to an object's properties by using the dot notation or the bracket notation."
+                        >Property accessors</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/Spread_syntax"
+                        title="Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected."
+                        >Spread syntax</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/async_function"
+                        title="The async function keyword can be used to define async functions inside expressions."
+                        >async function expression</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/await"
+                        title="The await operator is used to wait for a Promise. It can only be used inside&nbsp;an async function."
+                        >await</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/class"
+                        title="The class expression is one way to define a class in ECMAScript 2015. Similar to function expressions, class expressions can be named or unnamed. If named, the name of the class is local to the class body only. JavaScript classes use&nbsp;prototype-based inheritance."
+                        >class expression</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/delete"
+                        title="The JavaScript delete operator removes a property from an object; if no more references to the same property are held, it is eventually released automatically."
+                        >delete operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/function"
+                        title="The function keyword can be used to define a function inside an expression."
+                        >function expression</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/function*"
+                        title="The function* keyword can be used to define a generator function inside an expression."
+                        >function* expression</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/in"
+                        title="The in operator returns true if the specified property is in the specified object or its prototype chain."
+                        >in operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/instanceof"
+                        title="The instanceof operator tests whether the prototype property of a constructor appears anywhere in the prototype chain of an object."
+                        >instanceof</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/new"
+                        title="The new operator lets developers create an instance of a user-defined object type or of one of the built-in object types that has a constructor function."
+                        >new operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/new.target"
+                        title="The new.target&nbsp;pseudo-property lets you detect whether a function or constructor was called using the new operator. In constructors and functions invoked using the new operator, new.target returns a reference to the constructor or function.&nbsp;In normal function calls, new.target is undefined."
+                        >new.target</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/super"
+                        title="The super keyword is used to access and call functions on an object's parent."
+                        >super</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/this"
+                        title="A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode."
+                        >this</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/typeof"
+                        title="The typeof operator returns a string indicating the type of the unevaluated operand."
+                        >typeof</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/void"
+                        title="The void operator evaluates the given expression and then returns undefined."
+                        >void operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/yield"
+                        title="The yield keyword is used to pause and resume a generator function (function* or legacy generator function)."
+                        >yield</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Operators/yield*"
+                        title="The yield* expression is used to delegate to another generator or iterable object."
+                        >yield*</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Statements &amp; declarations</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This API has not been standardized."
+                          ><i class="icon-warning-sign"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Statements/Legacy_generator_function"
+                        title="The legacy generator function statement declares legacy generator functions with the specified parameters."
+                        >Legacy generator function</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/async_function"
+                        title="The async function declaration defines an asynchronous function, which returns an AsyncFunction object."
+                        >async function</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/block"
+                        title="A block statement (or compound statement in other languages) is used to group zero or more statements. The block is delimited by a pair of curly brackets and may optionally be labelled:"
+                        >block</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/break"
+                        title="The break statement terminates the current loop, switch, or label statement and transfers program control to the statement following the terminated statement."
+                        >break</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/class"
+                        title="The class declaration creates a new class with a given name using prototype-based inheritance."
+                        >class</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/const"
+                        title="Constants are block-scoped, much like variables defined using the let statement. The value of a constant can't be&nbsp;changed through reassignment, and it can't be redeclared."
+                        >const</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/continue"
+                        title="The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration."
+                        >continue</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/debugger"
+                        title="The debugger statement invokes any available debugging functionality, such as setting a breakpoint. If no debugging functionality is available, this statement has no effect."
+                        >debugger</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/default"
+                        title="The default keyword can be used in two situations in JavaScript: within a&nbsp;switch statement, or with an&nbsp;export statement."
+                        >default</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/do...while"
+                        title="The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once."
+                        >do...while</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/Empty"
+                        title="An empty statement is used to provide no statement, although the JavaScript syntax would expect one."
+                        >empty</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/export"
+                        title="The export statement is used when creating JavaScript modules to export functions, objects, or primitive values from the module so they can be used by other programs with the import statement."
+                        >export</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/for"
+                        title="The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop."
+                        >for</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/for-await...of"
+                        title="The for await...of statement creates a loop iterating over async iterable objects as well as on sync iterables, including: built-in String, Array,&nbsp;Array-like objects (e.g.,&nbsp;arguments or&nbsp;NodeList), TypedArray, Map, Set, and user-defined async/sync iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object."
+                        >for await...of</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This deprecated API should no longer be used, but will probably still work."
+                          ><i class="icon-thumbs-down-alt"> </i></span></span
+                      ><span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This is an obsolete API and is no longer guaranteed to work."
+                          ><i class="icon-trash"> </i></span></span
+                      ><a
+                        href="#Reference/Statements/for_each...in"
+                        title="The for each...in statement iterates a specified variable over all values of object's properties. For each distinct property, a specified statement is executed."
+                        >for each...in</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/for...in"
+                        title="The for...in statement iterates over all non-Symbol, enumerable properties of an object."
+                        >for...in</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/for...of"
+                        title="The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or&nbsp;NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object."
+                        >for...of</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/function"
+                        title="The function declaration (function statement) defines a function with the specified parameters."
+                        >function declaration</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/function*"
+                        title="The function* declaration (function keyword followed by an asterisk) defines a generator function, which returns a Generator object."
+                        >function*</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/if...else"
+                        title="The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed."
+                        >if...else</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/import"
+                        title="The static import statement is used to import bindings which are exported by another module. "
+                        >import</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/import.meta"
+                        title="The import.meta object exposes context-specific metadata to a JavaScript module. It contains information about the module, like the module's URL."
+                        >import.meta</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/label"
+                        title="The labeled statement can be used with break or continue statements. It is prefixing a statement with an identifier which you can refer to."
+                        >label</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/let"
+                        title="The let statement declares a block scope local variable, optionally initializing it to a value."
+                        >let</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/return"
+                        title="The return statement ends function execution and specifies a value to be returned to the function caller."
+                        >return</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/switch"
+                        title="The switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case, as well as statements in&nbsp;cases that follow the matching case."
+                        >switch</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/throw"
+                        title="The throw statement throws a user-defined exception. Execution of the current function will stop (the statements after throw won't be executed), and control will be passed to the first catch block in the call stack. If no catch block exists among caller functions, the program will terminate."
+                        >throw</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/try...catch"
+                        title="The try...catch statement marks a block of statements to try, and specifies a response, should an exception be thrown."
+                        >try...catch</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/var"
+                        title="The var statement declares a variable, optionally initializing it to a value."
+                        >var</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Statements/while"
+                        title="The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement."
+                        >while</a
+                      >
+                    </li>
+                    <li>
+                      <span class="sidebar-icon"
+                        ><span
+                          class="icon-only-inline"
+                          title="This deprecated API should no longer be used, but will probably still work."
+                          ><i class="icon-thumbs-down-alt"> </i></span></span
+                      ><a
+                        href="#Reference/Statements/with"
+                        title="The with statement extends the scope chain for a statement."
+                        >with</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Functions</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Reference/Functions/Arrow_functions"
+                        title="An arrow function expression is a syntactically compact&nbsp;alternative to a&nbsp;regular&nbsp;function expression, although without&nbsp;its own bindings to the&nbsp;this, arguments, super, or new.target&nbsp;keywords. Arrow&nbsp;function expressions are ill suited as&nbsp;methods,&nbsp;and they cannot&nbsp;be used as constructors."
+                        >Arrow function expressions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/Default_parameters"
+                        title="Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed."
+                        >Default parameters</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/Method_definitions"
+                        title="Starting with ECMAScript 2015, a shorter syntax for method definitions on objects initializers is introduced. It is a shorthand for a function assigned to the method's name."
+                        >Method definitions</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/rest_parameters"
+                        title="The rest parameter syntax allows us to represent an indefinite number of arguments as an array."
+                        >Rest parameters</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/arguments"
+                        title="arguments is an Array-like object accessible inside functions that contains the values of the arguments passed to that function."
+                        >The arguments object</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/get"
+                        title="The&nbsp;get&nbsp;syntax binds an object property to a function that will be called when that property is looked up."
+                        >getter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Functions/set"
+                        title="The set syntax binds an object property to a function to be called when there is an attempt to set that property."
+                        >setter</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Classes</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Reference/Classes/Class_fields"
+                        title="Both static and instance public fields are writable, enumerable, configurable properties. As such, unlike their private counterparts, they participate in prototype inheritance."
+                        >Class fields</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Classes/constructor"
+                        title="The constructor method is a special method for creating and initializing an object created within a class."
+                        >constructor</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Classes/extends"
+                        title="The extends keyword is used in class declarations or class expressions to create a class which is a child of another class."
+                        >extends</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Classes/static"
+                        title="The static keyword defines a static method for a class. Static methods aren't called on instances of the class. Instead, they're called on the class itself."
+                        >static</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Errors</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Property_access_denied"
+                        title="There was attempt to access an object for which you have no permission. This is likely an <iframe> element loaded from a different domain for which you violated the same-origin policy."
+                        >Error: Permission denied to access property "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Too_much_recursion"
+                        title="When there are too many function calls, or a function is missing a base case, JavaScript will throw this error."
+                        >InternalError: too much recursion</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Not_a_codepoint"
+                        title="String.fromCodePoint() throws this error when passed NaN values, negative Integers (-1), non-Integers (5.4), or values larger than 0x10FFFF (1114111)."
+                        >RangeError: argument is not a valid code point</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_array_length"
+                        title="RangeError"
+                        >RangeError: invalid array length</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_date"
+                        title="RangeError"
+                        >RangeError: invalid date</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Precision_range"
+                        title="RangeError"
+                        >RangeError: precision is out of range</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Bad_radix"
+                        title="RangeError"
+                        >RangeError: radix must be an integer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Resulting_string_too_large"
+                        title="RangeError"
+                        >RangeError: repeat count must be less than infinity</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Negative_repetition_count"
+                        title="RangeError"
+                        >RangeError: repeat count must be non-negative</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Not_defined"
+                        title="ReferenceError."
+                        >ReferenceError: "x" is not defined</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Undeclared_var"
+                        title="ReferenceError warning in strict mode only."
+                        >ReferenceError: assignment to undeclared variable
+                        "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_access_lexical_declaration_before_init"
+                        title="ReferenceError"
+                        >ReferenceError: can't access lexical declaration`X'
+                        before initialization</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_caller_or_arguments_usage"
+                        title="A strict-mode-only warning that a ReferenceError occurred. JavaScript execution won't be halted."
+                        >ReferenceError: deprecated caller or arguments usage</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_assignment_left-hand_side"
+                        title="ReferenceError."
+                        >ReferenceError: invalid assignment left-hand side</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Undefined_prop"
+                        title="(Firefox only) ReferenceError warning which is reported only if javascript.options.strict preference is set to true."
+                        >ReferenceError: reference to undefined property "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_octal"
+                        title="SyntaxError in strict mode only."
+                        >SyntaxError: "0"-prefixed octal literals and octal
+                        escape seq. are deprecated</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Strict_Non_Simple_Params"
+                        title="SyntaxError."
+                        >SyntaxError: "use strict" not allowed in function with
+                        non-simple parameters</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Reserved_identifier"
+                        title="SyntaxError"
+                        >SyntaxError: "x" is a reserved identifier</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/JSON_bad_parse"
+                        title="SyntaxError"
+                        >SyntaxError: JSON.parse: bad parsing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Malformed_formal_parameter"
+                        title="SyntaxError"
+                        >SyntaxError: Malformed formal parameter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Unexpected_token"
+                        title="SyntaxError"
+                        >SyntaxError: Unexpected token</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_source_map_pragma"
+                        title="A warning that a SyntaxError occurred. JavaScript execution won't be halted."
+                        >SyntaxError: Using //@ to indicate sourceURL pragmas is
+                        deprecated. Use //# instead</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_for-of_initializer"
+                        title="SyntaxError"
+                        >SyntaxError: a declaration in the head of a for-of loop
+                        can't have an initializer</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Delete_in_strict_mode"
+                        title="SyntaxError in strict mode only."
+                        >SyntaxError: applying the 'delete' operator to an
+                        unqualified name is deprecated</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_for-in_initializer"
+                        title="SyntaxError in strict mode only."
+                        >SyntaxError: for-in loop head declarations may not have
+                        initializers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Unnamed_function_statement"
+                        title="SyntaxError"
+                        >SyntaxError: function statement requires a name</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Identifier_after_number"
+                        title="SyntaxError"
+                        >SyntaxError: identifier starts immediately after
+                        numeric literal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Illegal_character"
+                        title="SyntaxError"
+                        >SyntaxError: illegal character</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Bad_regexp_flag"
+                        title="SyntaxError"
+                        >SyntaxError: invalid regular expression flag "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_parenthesis_after_argument_list"
+                        title="SyntaxError."
+                        >SyntaxError: missing ) after argument list</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_parenthesis_after_condition"
+                        title="SyntaxError"
+                        >SyntaxError: missing ) after condition</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_colon_after_property_id"
+                        title="SyntaxError"
+                        >SyntaxError: missing : after property id</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_semicolon_before_statement"
+                        title="SyntaxError."
+                        >SyntaxError: missing ; before statement</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_initializer_in_const"
+                        title="SyntaxError"
+                        >SyntaxError: missing = in const declaration</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_bracket_after_list"
+                        title="SyntaxError."
+                        >SyntaxError: missing ] after element list</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_formal_parameter"
+                        title="SyntaxError"
+                        >SyntaxError: missing formal parameter</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_name_after_dot_operator"
+                        title="SyntaxError"
+                        >SyntaxError: missing name after . operator</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/No_variable_name"
+                        title="SyntaxError"
+                        >SyntaxError: missing variable name</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_curly_after_function_body"
+                        title="SyntaxError"
+                        >SyntaxError: missing } after function body</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Missing_curly_after_property_list"
+                        title="SyntaxError"
+                        >SyntaxError: missing } after property list</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Redeclared_parameter"
+                        title="SyntaxError"
+                        >SyntaxError: redeclaration of formal parameter "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Bad_return_or_yield"
+                        title="SyntaxError."
+                        >SyntaxError: return not in function</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Equal_as_assign"
+                        title="(Firefox only) SyntaxError warning which is reported only if javascript.options.strict preference is set to true."
+                        >SyntaxError: test for equality (==) mistyped as
+                        assignment (=)?</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Unterminated_string_literal"
+                        title="SyntaxError"
+                        >SyntaxError: unterminated string literal</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/No_properties"
+                        title="TypeError."
+                        >TypeError: "x" has no properties</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Unexpected_type"
+                        title="TypeError."
+                        >TypeError: "x" is (not) "y"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Not_a_constructor"
+                        title="TypeError"
+                        >TypeError: "x" is not a constructor</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Not_a_function"
+                        title="TypeError."
+                        >TypeError: "x" is not a function</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/No_non-null_object"
+                        title="TypeError"
+                        >TypeError: "x" is not a non-null object</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Read-only"
+                        title="TypeError"
+                        >TypeError: "x" is read-only</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/is_not_iterable"
+                        title="TypeError"
+                        >TypeError: 'x' is not iterable</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/More_arguments_needed"
+                        title="TypeError."
+                        >TypeError: More arguments needed</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Reduce_of_empty_array_with_no_initial_value"
+                        title="TypeError"
+                        >TypeError: Reduce of empty array with no initial
+                        value</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Called_on_incompatible_type"
+                        title="TypeError"
+                        >TypeError: X.prototype.y called on incompatible type</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Dead_object"
+                        title="TypeError"
+                        >TypeError: can't access dead object</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_access_property"
+                        title="TypeError."
+                        >TypeError: can't access property "x" of "y"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_assign_to_property"
+                        title="TypeError."
+                        >TypeError: can't assign to property "x" on "y": not an
+                        object</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_define_property_object_not_extensible"
+                        title="TypeError"
+                        >TypeError: can't define property "x": "obj" is not
+                        extensible</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Non_configurable_array_element"
+                        title="TypeError"
+                        >TypeError: can't delete non-configurable array
+                        element</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_redefine_property"
+                        title="TypeError"
+                        >TypeError: can't redefine non-configurable property
+                        "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/in_operator_no_object"
+                        title="TypeError"
+                        >TypeError: cannot use 'in' operator to search for 'x'
+                        in 'y'</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cyclic_object_value"
+                        title="TypeError"
+                        >TypeError: cyclic object value</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/invalid_right_hand_side_instanceof_operand"
+                        title="TypeError"
+                        >TypeError: invalid 'instanceof' operand 'x'</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Array_sort_argument"
+                        title="TypeError"
+                        >TypeError: invalid Array.prototype.sort argument</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Typed_array_invalid_arguments"
+                        title="TypeError"
+                        >TypeError: invalid arguments</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Invalid_const_assignment"
+                        title="TypeError"
+                        >TypeError: invalid assignment to const "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Cant_delete"
+                        title="TypeError in strict mode only."
+                        >TypeError: property "x" is non-configurable and can't
+                        be deleted</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Getter_only"
+                        title="TypeError in strict mode only."
+                        >TypeError: setting getter-only property "x"</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Var_hides_argument"
+                        title="TypeError warning in strict mode only."
+                        >TypeError: variable "x" redeclares argument</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Malformed_URI"
+                        title="URIError"
+                        >URIError: malformed URI sequence</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Already_has_pragma"
+                        title="A warning. JavaScript execution won't be halted."
+                        >Warning: -file- is being assigned a //#
+                        sourceMappingURL, but already has one</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Bad_octal"
+                        title="Warning. JavaScript execution won't be halted."
+                        >Warning: 08/09 is not a legal ECMA-262 octal
+                        constant</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_toLocaleFormat"
+                        title="Warning. JavaScript execution won't be halted."
+                        >Warning: Date.prototype.toLocaleFormat is deprecated</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/For-each-in_loops_are_deprecated"
+                        title="Warning"
+                        >Warning: JavaScript 1.6's for-each-in loops are
+                        deprecated</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_String_generics"
+                        title="Warning. JavaScript execution won't be halted."
+                        >Warning: String.x is deprecated; use String.prototype.x
+                        instead</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Deprecated_expression_closures"
+                        title="Warning. JavaScript execution won't be halted."
+                        >Warning: expression closures are deprecated</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Errors/Stmt_after_return"
+                        title="Warning"
+                        >Warning: unreachable code after return statement</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">Misc</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#JavaScript_technologies_overview"
+                        >JavaScript technologies overview</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Lexical_grammar"
+                        >Lexical grammar</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#Data_structures"
+                        >JavaScript data structures</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Enumerability_and_ownership_of_properties"
+                        >Enumerability and ownership of properties</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Iteration_protocols"
+                        >Iteration protocols</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Strict_mode"
+                        >Strict mode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Strict_mode/Transitioning_to_strict_mode"
+                        >Transitioning to strict mode</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Template_literals"
+                        >Template literals</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#Reference/Deprecated_and_obsolete_features"
+                        >Deprecated features</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+              <li class="toggle">
+                <div class="details">
+                  <div class="details-subtitle">New in JavaScript</div class="details-subtitle">
+                  <ol>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/ECMAScript_2015_support_in_Mozilla"
+                        title="ECMAScript 2015&nbsp;is the sixth edition&nbsp;of the ECMAScript Language Specification standard. It defines the standard for the JavaScript implementation in SpiderMonkey, the engine used in Firefox and other Mozilla applications."
+                        >ECMAScript 2015 support in Mozilla</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/ECMAScript_5_support_in_Mozilla"
+                        title="ECMAScript 5.1, an older version of the standard upon which JavaScript is based, was approved in June 2011."
+                        >ECMAScript 5 support in Mozilla</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/Firefox_JavaScript_changelog"
+                        title="The following is a changelog for JavaScript features in Firefox releases."
+                        >Firefox JavaScript changelog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.1"
+                        title='The following is a changelog for JavaScript from Netscape Navigator 2.0 to 3.0. The old Netscape documentation references this as "Features added after version 1". Netscape Navigator 3.0 was released on August 19, 1996. Netscape Navigator 3.0 was the second major version of the browser with JavaScript support.'
+                        >New in JavaScript 1.1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.2"
+                        title="The following is a changelog for JavaScript from Netscape Navigator 3.0 to 4.0. The old Netscape documentation can be found on archive.org. Netscape Navigator 4.0 was released on June 11, 1997. Netscape Navigator 4.0 was the third major version of the browser with JavaScript support."
+                        >New in JavaScript 1.2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.3"
+                        title="The following is a changelog for JavaScript from Netscape Navigator 4.0 to 4.5. The old Netscape documentation can be found on archive.org. Netscape Navigator 4.5 was released on October 19, 1998."
+                        >New in JavaScript 1.3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.4"
+                        title="The following is a changelog for JavaScript 1.4, which was only used for Netscape's server side JavaScript released in 1999. The old Netscape documentation can be found on archive.org."
+                        >New in JavaScript 1.4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.5"
+                        title="The following is a changelog for JavaScript 1.5. This version was included in Netscape Navigator 6.0 was released on November 14, 2000 and was also used in later versions of Netscape Navigator and Firefox 1.0. You can compare JavaScript 1.5 to JScript version 5.5 and Internet Explorer 5.5, which was released in July 2000. The corresponding ECMA standard is ECMA-262 Edition 3 (from December 1999)."
+                        >New in JavaScript 1.5</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.6"
+                        title="The following is a changelog for JavaScript 1.6. This version was included in Firefox 1.5 (Gecko 1.8), which was released in November 2005. The corresponding ECMA standard is ECMA-262 Edition 3 and ECMAScript for XML (E4X) with some additional features. Several new features were introduced: E4X, several new Array methods, and Array and String generics."
+                        >New in JavaScript 1.6</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.7"
+                        title="The following is a changelog for JavaScript 1.7. This version was included in Firefox 2 (October 2006)."
+                        >New in JavaScript 1.7</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.8"
+                        title="The following is a changelog for JavaScript 1.8. This version was included in Firefox 3 and is part of Gecko 1.9. See bug&nbsp;380236 for a tracking development bug for JavaScript 1.8."
+                        >New in JavaScript 1.8</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.8.1"
+                        title="The following is a changelog for JavaScript 1.8.1. This version was included in Firefox 3.5."
+                        >New in JavaScript 1.8.1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#New_in_JavaScript/1.8.5"
+                        title="The following is a changelog for JavaScript 1.8.5. This version was included in Firefox 4."
+                        >New in JavaScript 1.8.5</a
+                      >
+                    </li>
+                  </ol>
+                </div class="details">
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </aside>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

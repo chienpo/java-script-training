@@ -1,0 +1,162 @@
+body {
+  min-height: 100vh;
+  background: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.app {
+  position: absolute;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  background: url(../img/main_bg.jpg) center center / cover;
+}
+
+.header {
+  .header-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.89) url("../img/overlay.png") repeat scroll 0 0;
+  }
+}
+
+aside {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+
+  .aside-menu {
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    width: 260px;
+    height: auto;
+    overflow: auto;
+    transition: width 0.3s ease;
+    box-sizing: border-box;
+    background: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    @extend .scroll;
+
+    @include respond-to(sm) {
+      background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat scroll 0 0;
+    }
+  }
+}
+
+.content-holder {
+  display: grid;
+  height: 100%;
+  grid-template-rows: auto 1fr;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat scroll 0 0;
+  overflow-x: hidden;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  transform: translate3d(260px, 0, 0);
+  width: calc(100% - 260px);
+  transition: all ease-in-out 0.4s;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  @extends .scroll;
+
+  &.opened {
+    transform: translate3d(260px, 0, 0);
+  }
+
+  @include respond-to(sm) {
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    background: white;
+  }
+}
+
+.container {
+  padding: 0 15px;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  .logo {
+    opacity: 1;
+  }
+
+  .page-category-box {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    width: calc(100% - 260px);
+
+    .page-category {
+      text-transform: uppercase;
+      padding-left: 20px;
+      @include font-type($orbitronLight, $light, 36px, 42px, 1px);
+
+      @include respond-to(xs) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+section {
+  width: 100%;
+  padding: 40px 0;
+
+  &.wr {
+    &-section {
+      display: flex;
+    }
+  }
+}
+
+footer.footer {
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    small {
+      text-transform: uppercase;
+      @include font-type($orbitronLight, #808080, 11px, 18px, 0.5px)
+    }
+  }
+}
