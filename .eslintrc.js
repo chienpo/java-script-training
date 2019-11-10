@@ -1,49 +1,47 @@
 module.exports = {
+  root: true,
   parser: 'babel-eslint',
-  env: {
-    browser: true,
-    jest: true,
-    es6: true,
-    node: true,
+  globals: {
+    window: true,
+    document: true,
+    fetch: false,
+  },
+  parserOptions: {
+    allowImportExportEverywhere: true,
+    codeFrame: false,
   },
   extends: [
-    'airbnb',
-    'prettier',
     'plugin:eslint-comments/recommended',
     'plugin:promise/recommended',
+    'airbnb',
+    'prettier',
   ],
+  plugins: ['filenames', 'promise', 'html'],
   settings: {
     'import/resolver': {
-      node: {
-        paths: ['src/', 'node_modules'],
+      webpack: {
+        config: './webpack.config.js',
       },
     },
   },
-  plugins: ['prettier', 'promise', 'react-hooks'],
   rules: {
-    'prettier/prettier': [
+    'import/prefer-default-export': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-default-export': 'error', // prefer named export
+    'space-before-function-paren': [
       'error',
       {
-        singleQuote: true,
-        trailingComma: 'es5',
+        anonymous: 'always',
+        named: 'always', // use space in function declaration
+        asyncArrow: 'always',
       },
     ],
-    'import/prefer-default-export': 'off',
     'react/jsx-filename-extension': [
       'error',
       {
         extensions: ['.js'], // no .jsx
       },
     ],
-    'space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'always',
-        named: 'always', // use space
-        asyncArrow: 'always',
-      },
-    ],
-    'no-plusplus': ['off', { allowForLoopAfterthoughts: true }],
     'eslint-comments/disable-enable-pair': [
       'error',
       {
@@ -51,21 +49,53 @@ module.exports = {
       },
     ],
     'no-restricted-syntax': [
+      // allow for..of
       'error',
       'ForInStatement',
       'LabeledStatement',
       'WithStatement',
       "BinaryExpression[operator='in']",
     ],
-    'react-hooks/rules-of-hooks': 'error',
-    'react/require-default-props': 'off', // optional props without defaults
-    'react/sort-comp': 'off', // do not sort React class fields/methods
-    'react/forbid-prop-types': 'warn',
-    'quote-props': ['warn', 'as-needed', { numbers: true }],
+    // blacklist vars (but not "error")
+    'id-blacklist': [
+      'error',
+      'e',
+      'err',
+      'msg',
+      'arr',
+      'obj',
+      'temp',
+      'that',
+      'elem',
+    ],
+    'no-implicit-coercion': 'error', // do not use ~, !!, + or * type coercion (use Number, Boolean, String)
+    'object-curly-newline': [
+      'warn',
+      {
+        // allow 5 or less
+        ObjectExpression: {
+          minProperties: 5,
+          multiline: true,
+          consistent: true,
+        },
+        ObjectPattern: { minProperties: 5, multiline: true, consistent: true },
+        ImportDeclaration: {
+          minProperties: 5,
+          multiline: true,
+          consistent: true,
+        },
+        ExportDeclaration: {
+          minProperties: 5,
+          multiline: true,
+          consistent: true,
+        },
+      },
+    ],
+    'quote-props': ['warn', 'as-needed', { numbers: true }], // quotes for object props
     'max-len': [
       'warn',
       {
-        code: 120,
+        code: 80, // Use the same as prettier
         tabWidth: 2,
         ignoreComments: true,
         ignoreUrls: true,
@@ -74,10 +104,7 @@ module.exports = {
         ignoreRegExpLiterals: true,
       },
     ],
-  },
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+    'arrow-body-style': 'warn',
+    'react/prop-types': 'warn',
   },
 };

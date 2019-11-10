@@ -1,21 +1,17 @@
-.scroll {
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px white;
-    background-color: white;
-  }
+h1 {
+  margin-bottom: 15px;
+  @include font-type($orbitronBold, black, 24px, 32px, 1px);
 
-  &::-webkit-scrollbar {
-    width: 4px;
-    background-color: white;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: black;
+  @include respond-to(xs) {
+    font-size: 12px;
   }
 }
 
-h1 {
-  @include font-type($orbitronLight, black, 36px, 42px, 1px);
+h3 {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  @include font-type($orbitronLight, black, 14px, 20px, 1px);
 
   @include respond-to(xs) {
     font-size: 12px;
@@ -23,7 +19,7 @@ h1 {
 }
 
 .logo {
-  background: url('../img/logo.png') no-repeat left center / contain;
+  background: url("../img/logo.png") no-repeat left center / contain;
   @include font-type($orbitronMedium, $lightGrey, 24px, 30px, 0);
   display: flex;
   align-items: center;
@@ -72,10 +68,24 @@ h1 {
     display: flex;
     align-items: center;
     background: $black;
-    padding: 10px 5px;
+    padding: 5px;
     box-sizing: border-box;
     margin-bottom: 5px;
-    @include font-type($orbitronLight, $light, 24px, 24px, 1px);
+    @include font-type($orbitronLight, $light, 18px, 24px, 1px);
+
+    &:hover {
+      color: lightgrey;
+    }
+  }
+
+  .nav-link.active {
+    color: blue;
+    font-weight: bold;
+  }
+
+  .nav-title.active {
+    color: grey;
+    font-weight: bold;
   }
 
   ol {
@@ -83,7 +93,13 @@ h1 {
       background: white;
 
       a {
+        display: block;
+        transition: color ease-in 0.2s;
         @include font-type($orbitronLight, $dark, 12px, 18px, 1px);
+
+        &:hover {
+          color: blue;
+        }
       }
 
       .details {
@@ -92,8 +108,7 @@ h1 {
 
       &.toggle {
         .details ol {
-          transition: max-height ease-in-out 0.2s;
-          max-height: 0;
+          display: none;
         }
 
         &.active {
@@ -104,8 +119,7 @@ h1 {
             }
 
             ol {
-              transition: max-height ease-in-out 0.2s;
-              max-height: 1500px;
+              display: block;
             }
           }
         }
@@ -123,7 +137,7 @@ h1 {
             @include font-type($orbitronMedium, red, 14px, 20px, 0);
 
             &::before {
-              content: '';
+              content: "";
               position: absolute;
               left: 10px;
               top: 9px;

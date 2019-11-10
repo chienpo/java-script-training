@@ -1,1 +1,0 @@
-export const APP_LOADING_TIMEOUT = 2500;

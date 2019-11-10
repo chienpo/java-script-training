@@ -10,11 +10,11 @@ export const bookController = (() => {
   };
 
   return {
-    initAccordion: accordionElem => {
+    initAccordion: (accordionElem) => {
       const allPanels = accordionElem.querySelectorAll('.toggle');
 
       for (const panel of allPanels) {
-        panel.addEventListener('click', event => {
+        panel.addEventListener('click', (event) => {
           togglePanel(event.currentTarget, accordionElem);
         });
       }

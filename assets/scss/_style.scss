@@ -25,7 +25,8 @@ body {
     top: 0;
     width: 100%;
     height: 65px;
-    background: rgba(255, 255, 255, 0.89) url("../img/overlay.png") repeat scroll 0 0;
+    background: rgba(255, 255, 255, 0.89) url("../img/overlay.png") repeat
+      scroll 0 0;
   }
 }
 
@@ -56,7 +57,8 @@ aside {
     @extend .scroll;
 
     @include respond-to(sm) {
-      background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat scroll 0 0;
+      background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat
+        scroll 0 0;
     }
   }
 }
@@ -64,11 +66,12 @@ aside {
 .content-holder {
   display: grid;
   height: 100%;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: 1fr auto;
 }
 
 main {
-  background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat scroll 0 0;
+  background: rgba(255, 255, 255, 0.8) url("../img/overlay.png") repeat scroll 0
+    0;
   overflow-x: hidden;
   position: absolute;
   top: 65px;
@@ -82,7 +85,7 @@ main {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  @extends .scroll;
+  @extend .scroll;
 
   &.opened {
     transform: translate3d(260px, 0, 0);
@@ -138,8 +141,12 @@ section {
   padding: 40px 0;
 
   &.wr {
-    &-section {
-      display: flex;
+    &-main {
+      position: relative;
+
+      .preview-holder {
+        width: 100%;
+      }
     }
   }
 }
@@ -156,7 +163,7 @@ footer.footer {
 
     small {
       text-transform: uppercase;
-      @include font-type($orbitronLight, #808080, 11px, 18px, 0.5px)
+      @include font-type($orbitronLight, #808080, 11px, 18px, 0.5px);
     }
   }
 }

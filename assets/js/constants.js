@@ -1,0 +1,3 @@
+// export const APP_LOADING_TIMEOUT = 2500;
+export const APP_LOADING_TIMEOUT = 200;
+export const CONTENT_LOADING_TIMEOUT = 400;

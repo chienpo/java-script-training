@@ -22,6 +22,56 @@
   }
 }
 
+.container-main {
+  opacity: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+.prism-loader-wrap {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  transition: all ease-in-out 0.4s;
+}
+
+.prism-loader {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+  border: 4px rgba(0, 0, 0, 0.25) solid;
+  border-top: 4px black solid;
+  border-radius: 50%;
+  animation: spin2 1s infinite linear;
+
+  @-webkit-keyframes spin2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  @keyframes spin2 {
+    from {
+      transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+}
+
 .preloader {
   width: 200px;
   height: auto;
